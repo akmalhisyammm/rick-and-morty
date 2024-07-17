@@ -11,6 +11,7 @@ import {
 } from '@/constants/app';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { Toaster } from '@/components/ui/sonner';
 import { cn } from '@/lib/utils';
 import Providers from '@/app/providers';
 
@@ -76,6 +77,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
             {children}
           </main>
           <Footer />
+          <Toaster />
         </Providers>
       </body>
     </html>
